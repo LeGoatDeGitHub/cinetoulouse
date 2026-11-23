@@ -1,0 +1,32 @@
+{
+  "name": "cinetoulouse",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:server": "bun --watch src/server/index.ts",
+    "dev:web": "vite",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "start": "bun src/server/index.ts",
+    "sync": "bun src/server/run-sync.ts",
+    "export:static": "bun src/server/export-static.ts"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "hono": "^4.13.20",
+    "lucide-react": "^1.77.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "bun-types": "^1.4.5",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  }
+}
